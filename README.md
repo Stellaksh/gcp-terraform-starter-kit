@@ -2,26 +2,7 @@ GCP Production Infrastructure — Terraform Starter Kit
 Built and maintained by Stellaksh Digital — Elite Cloud & DevOps Teams for Global Tech Companies 
 Overview 
 Production-grade Google Cloud Platform infrastructure provisioned entirely with Terraform. This starter kit provisions a complete, security-hardened GCP environment suitable for SaaS applications at scale. 
-Architecture 
-┌─────────────────────────────────────────────────────┐ 
-│ GCP Project │ 
-│ │ 
-│ ┌──────────────────────────────────────────────┐ │ 
-│ │ Custom VPC │ │ 
-│ │ │ │ 
-│ │ ┌─────────────┐ ┌─────────────────────┐ │ │ 
-│ │ │ GKE Cluster │ │ Cloud SQL (PG) │ │ │ 
-│ │ │ (Private) │ │ (Private IP) │ │ │ 
-│ │ └─────────────┘ └─────────────────────┘ │ │ 
-│ │ │ │ 
-│ │ ┌─────────────┐ ┌─────────────────────┐ │ │ 
-│ │ │ Cloud Run │ │ Cloud Storage │ │ │ 
-│ │ │ Services │ │ (Versioned) │ │ │ 
-│ │ └─────────────┘ └─────────────────────┘ │ │ 
-│ └──────────────────────────────────────────────┘ │ 
-│ │ 
-│ IAM · Cloud Armor · VPC Service Controls │ 
-└─────────────────────────────────────────────────────┘ 
+
 What Gets Provisioned
 Resource 
 Purpose
